@@ -1,0 +1,22 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+E:/Egyetem/3.felev/cpp/lab03/List.cpp
+List.h
+E:/Egyetem/3.felev/cpp/lab03/List.h
+
+E:/Egyetem/3.felev/cpp/lab03/List.h
+iostream
+-
+stdexcept
+-
+
+E:/Egyetem/3.felev/cpp/lab03/main_03.cpp
+List.h
+E:/Egyetem/3.felev/cpp/lab03/List.h
+
