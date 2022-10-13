@@ -6,17 +6,17 @@
 
 #IncludeRegexTransform: 
 
-E:/Egyetem/3.felev/cpp/lab03/List.cpp
-List.h
-E:/Egyetem/3.felev/cpp/lab03/List.h
-
 E:/Egyetem/3.felev/cpp/lab03/List.h
 iostream
 -
 stdexcept
 -
 
-E:/Egyetem/3.felev/cpp/lab03/main_03.cpp
+E:/Egyetem/3.felev/cpp/lab03/Stack.cpp
+Stack.h
+E:/Egyetem/3.felev/cpp/lab03/Stack.h
+
+E:/Egyetem/3.felev/cpp/lab03/Stack.h
 List.h
 E:/Egyetem/3.felev/cpp/lab03/List.h
 

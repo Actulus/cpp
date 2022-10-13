@@ -54,102 +54,83 @@ int List::removeFirst() {
 	return tempValue;
 }
 void List::remove(int d, List::DeleteFlag df) {
-	Node *temp = nullptr, *temp1 = first, *temp2 = temp1->next;
-	while (temp1){
-		temp2 = temp1->next;
+	Node *previous = nullptr, *current = first, *following = current->next;
+	while (current){
 		if(df == DeleteFlag::LESS){
-			if(temp1->value < d){
-				if(temp == nullptr){
-					temp = temp1;
-					delete temp;
-					nodeCounter--;
-					if(temp2 != nullptr && temp2->next != nullptr){
-						temp1 = temp1->next;
-						temp2 = temp2->next;
-						temp = nullptr;
-					}
-				} else if (temp2 == nullptr){
-					temp->next = nullptr;
-					delete temp1;
-					nodeCounter--;
-					temp1 = nullptr;
-				} else {
-					temp->next = temp2;
-					delete temp1;
-					nodeCounter--;
-					temp1 = temp2;
-					temp2 = temp2->next;
+			if(current->value < d){
+				if (previous == nullptr && following != nullptr){
+					previous = current;
+					current = following;
+					following = current->next; //following->next
+					delete previous;
+					previous = nullptr;
+				} else if(previous != nullptr && following != nullptr){
+					previous->next = current->next;
+					delete current;
+					current = previous->next;
+					current->next = following->next;
+				} else if(previous != nullptr && following == nullptr){
+					current->next = nullptr;
+					previous->next = nullptr;
+					delete current;
+					current = nullptr;
 				}
+			} else {
+				previous = current;
+				current = current->next;
+				following = current->next;
 			}
-			temp = temp1;
-			if(temp1){
-				temp1 = temp1->next;
-				if(temp2) {
-					temp2 = temp2->next;
+		} else if(df == DeleteFlag::EQUAL) {
+			if(current->value == d){
+				if (previous == nullptr && following != nullptr){
+					previous = current;
+					current = following;
+					following = current->next; //following->next
+					delete previous;
+					previous = nullptr;
+				} else if(previous != nullptr && following != nullptr){
+					previous->next = current->next;
+					delete current;
+					current = previous->next;
+					current->next = following->next;
+				} else if(previous != nullptr && following == nullptr){
+					current->next = nullptr;
+					previous->next = nullptr;
+					delete current;
+					current = nullptr;
 				}
-			}
-
-		} else if(df == DeleteFlag::EQUAL){
-			if(temp1->value == d){
-				if(temp == nullptr){
-					delete temp1;
-					nodeCounter--;
-					if(temp2 != nullptr && temp2->next != nullptr){
-						temp1 = temp2;
-						temp2 = temp2->next;
-						temp = nullptr;
-					}
-				} else if (temp2 == nullptr){
-					temp->next = nullptr;
-					delete temp1;
-					nodeCounter--;
-					temp1 = nullptr;
-				} else {
-					temp->next = temp2;
-					delete temp1;
-					nodeCounter--;
-					temp1 = temp2;
-					temp2 = temp2->next;
-				}
-			}
-			temp = temp1;
-			if(temp1){
-				temp1 = temp1->next;
-				if(temp2) {
-					temp2 = temp2->next;
-				}
+			} else {
+				previous = current;
+				current = current->next;
+				following = current->next;
 			}
 		} else if(df == DeleteFlag::GREATER){
-			if(temp1->value > d){
-				if(temp == nullptr){
-					temp = temp1;
-					delete temp;
-					nodeCounter--;
-					if(temp2 != nullptr && temp2->next != nullptr){
-						temp1 = temp1->next;
-						temp2 = temp2->next;
-						temp = nullptr;
-					}
-				} else if (temp2 == nullptr){
-					temp->next = nullptr;
-					delete temp1;
-					nodeCounter--;
-					temp1 = nullptr;
-				} else {
-					temp->next = temp2;
-					delete temp1;
-					nodeCounter--;
-					temp1 = temp2;
-					temp2 = temp2->next;
+			if(current->value == d){
+				if (previous == nullptr && following != nullptr){
+					previous = current;
+					current = following;
+					following = current->next; //following->next
+					delete previous;
+					previous = nullptr;
+				} else if(previous != nullptr && following != nullptr){
+					previous->next = current->next;
+					delete current;
+					current = previous->next;
+					current->next = following->next;
+				} else if(previous != nullptr && following == nullptr){
+					current->next = nullptr;
+					previous->next = nullptr;
+					delete current;
+					current = nullptr;
 				}
+			} else {
+				previous = current;
+				current = current->next;
+				following = current->next;
 			}
-			temp = temp1;
-			if(temp1){
-				temp1 = temp1->next;
-				if(temp2) {
-					temp2 = temp2->next;
-				}
-			}
+		} else {
+			std::cout << "Invalid flag!" << std::endl;
+			exit(-1);
 		}
 	}
 }

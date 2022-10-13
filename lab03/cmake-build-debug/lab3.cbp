@@ -88,6 +88,12 @@
 		<Unit filename="E:/Egyetem/3.felev/cpp/lab03/List.h">
 			<Option target="lab3"/>
 		</Unit>
+		<Unit filename="E:/Egyetem/3.felev/cpp/lab03/Stack.cpp">
+			<Option target="lab3"/>
+		</Unit>
+		<Unit filename="E:/Egyetem/3.felev/cpp/lab03/Stack.h">
+			<Option target="lab3"/>
+		</Unit>
 		<Unit filename="E:/Egyetem/3.felev/cpp/lab03/main_03.cpp">
 			<Option target="lab3"/>
 		</Unit>

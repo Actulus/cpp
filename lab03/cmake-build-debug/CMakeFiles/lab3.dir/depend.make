@@ -4,6 +4,11 @@
 CMakeFiles/lab3.dir/List.cpp.obj: \
  ../List.cpp \
  ../List.h
+CMakeFiles/lab3.dir/Stack.cpp.obj: \
+ ../List.h \
+ ../Stack.cpp \
+ ../Stack.h
 CMakeFiles/lab3.dir/main_03.cpp.obj: \
  ../List.h \
+ ../Stack.h \
  ../main_03.cpp

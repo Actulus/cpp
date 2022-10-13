@@ -9,6 +9,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
   "E:/Egyetem/3.felev/cpp/lab03/List.cpp" "E:/Egyetem/3.felev/cpp/lab03/cmake-build-debug/CMakeFiles/lab3.dir/List.cpp.obj"
+  "E:/Egyetem/3.felev/cpp/lab03/Stack.cpp" "E:/Egyetem/3.felev/cpp/lab03/cmake-build-debug/CMakeFiles/lab3.dir/Stack.cpp.obj"
   "E:/Egyetem/3.felev/cpp/lab03/main_03.cpp" "E:/Egyetem/3.felev/cpp/lab03/cmake-build-debug/CMakeFiles/lab3.dir/main_03.cpp.obj"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
