@@ -70,9 +70,12 @@ void PointSet::sortDistances() {
 	std::sort(distances.begin(), distances.end());
 }
 
+
 int PointSet::numDistinctDistances() {
 	sortDistances();
 	double distinctCount = distance(distances.begin(), (unique(distances.begin(), distances.end())));
+	//auto distinctCount = *unique(distances.begin(), distances.end());
+	//cout << "~" << distance(distances.begin(), (unique(distances.begin(), distances.end()))) << "~";
 	return distinctCount;
 }
 
