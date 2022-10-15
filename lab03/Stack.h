@@ -6,6 +6,9 @@
 #define LAB3_STACK_H
 
 #include "List.h"
+#include <vector>
+
+using namespace std;
 
 class Stack {
 public:
@@ -17,12 +20,7 @@ public:
 	void display();
 
 private:
-	List *list = new List();
-	struct Node {
-		int data;
-		Node *link;
-	};
-	Node *top;
+	List *list;
 };
 
 

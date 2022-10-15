@@ -5,52 +5,34 @@
 #include "Stack.h"
 
 Stack::Stack() {
-	this->top = nullptr;
+	list = new List();
 }
+
 Stack::~Stack() {
+	delete list;
 }
+
 void Stack::push(int e) {
-	Node *temp = new Node();
-	if(!temp){
-		throw std::invalid_argument("Stack owerflow");
-	}
-
-	temp->data = e;
-	temp->link = top;
-	top = temp;
-	//list->insertFirst(e);
+	list->insertFirst(e);
 }
-int Stack::pop() {
-	Node *temp;
 
-	if(isEmpty()){
-		throw std::invalid_argument("Stack underflow");
-	} else {
-		temp = top;
-		top = top->link;
-		free(temp);
-		//list->remove(top->data, List::DeleteFlag::EQUAL);
+int Stack::pop() {
+	int popped;
+	if (isEmpty()) {
+		throw runtime_error("Stack is empty!");
 	}
 
-	return 0;
+	try {
+		popped = list->removeFirst();
+	} catch (runtime_error &error) {
+		cout << error.what();
+		exit(-1);
+	}
+	return popped;
 }
 bool Stack::isEmpty() const {
-	return top == nullptr;
+	return list->empty();
 }
 void Stack::display() {
-	Node *temp;
-
-	if(top == nullptr) {
-		throw std::invalid_argument("Stack underflow");
-	} else {
-		temp = top;
-		while (temp != nullptr){
-			std::cout << temp->data;
-			temp = temp->link;
-			if(temp != nullptr){
-				std::cout << " -> ";
-			}
-		}
-		std::cout << std::endl;
-	}
+	list->print();
 }

@@ -1,7 +1,7 @@
 #include "Stack.h"
 
 int main() {
-	std::cout << "----LIST----\n";
+	/*std::cout << "----LIST----\n";
 	List *list = new List();
 	list->insertFirst(4);
 	list->insertFirst(2);
@@ -10,22 +10,26 @@ int main() {
 
 	list->print();
 
-	/*try {
+	try {
 		list->removeFirst();
+		list->print();
 		list->removeFirst();
+		list->print();
 		list->removeFirst();
+		list->print();
 		list->removeFirst();
+		list->print();
 		list->removeFirst();
-	} catch(std::invalid_argument &error){
+	} catch (std::invalid_argument &error) {
 		std::cout << error.what();
 	}*/
 
 	/*list->remove(2, List::DeleteFlag::EQUAL);
 	list->print();*/
-	/*list->remove(2, List::DeleteFlag::LESS);
+	/*list->remove(1, List::DeleteFlag::LESS);
 	list->print();*/
-	//list->remove(1, List::DeleteFlag::EQUAL);
-	list->print();
+	/*list->remove(4, List::DeleteFlag::GREATER);
+	list->print();*/
 
 
 	//----------------STACK---------------
@@ -47,10 +51,9 @@ int main() {
 		stack->display();
 		stack->pop();
 		stack->display();
-	} catch(std::invalid_argument &error){
+	} catch (std::invalid_argument &error) {
 		std::cout << error.what();
 	}
-
 
 
 	return 0;

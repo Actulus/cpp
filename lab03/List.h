@@ -7,6 +7,7 @@
 
 #include <iostream>
 #include <stdexcept>
+#include <bits/stdc++.h>
 
 class List {
 public:

@@ -11,6 +11,8 @@ iostream
 -
 stdexcept
 -
+bits/stdc++.h
+-
 
 E:/Egyetem/3.felev/cpp/lab03/Stack.cpp
 Stack.h
@@ -19,4 +21,10 @@ E:/Egyetem/3.felev/cpp/lab03/Stack.h
 E:/Egyetem/3.felev/cpp/lab03/Stack.h
 List.h
 E:/Egyetem/3.felev/cpp/lab03/List.h
+vector
+-
+
+E:/Egyetem/3.felev/cpp/lab03/main_03.cpp
+Stack.h
+E:/Egyetem/3.felev/cpp/lab03/Stack.h
 

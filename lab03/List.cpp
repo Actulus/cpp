@@ -9,7 +9,7 @@ List::List() {
 }
 List::~List() {
 	Node *temp = first;
-	while(temp) {
+	while (temp) {
 		temp = first->next;
 		delete first;
 		first = temp;
@@ -20,8 +20,8 @@ List::~List() {
 }
 bool List::exists(int d) const {
 	Node *temp = first;
-	while(temp){
-		if(temp->value == d){
+	while (temp) {
+		if (temp->value == d) {
 			return true;
 		} else {
 			temp = first->next;
@@ -41,7 +41,7 @@ void List::insertFirst(int d) {
 	nodeCounter++;
 }
 int List::removeFirst() {
-	if(this->empty()){
+	if (this->empty()) {
 		throw std::invalid_argument("Empty list");
 	}
 	Node *temp = first;
@@ -53,90 +53,85 @@ int List::removeFirst() {
 
 	return tempValue;
 }
+
 void List::remove(int d, List::DeleteFlag df) {
-	Node *previous = nullptr, *current = first, *following = current->next;
-	while (current){
-		if(df == DeleteFlag::LESS){
-			if(current->value < d){
-				if (previous == nullptr && following != nullptr){
-					previous = current;
-					current = following;
-					following = current->next; //following->next
-					delete previous;
-					previous = nullptr;
-				} else if(previous != nullptr && following != nullptr){
-					previous->next = current->next;
-					delete current;
-					current = previous->next;
-					current->next = following->next;
-				} else if(previous != nullptr && following == nullptr){
-					current->next = nullptr;
-					previous->next = nullptr;
-					delete current;
-					current = nullptr;
-				}
-			} else {
-				previous = current;
-				current = current->next;
-				following = current->next;
-			}
-		} else if(df == DeleteFlag::EQUAL) {
-			if(current->value == d){
-				if (previous == nullptr && following != nullptr){
-					previous = current;
-					current = following;
-					following = current->next; //following->next
-					delete previous;
-					previous = nullptr;
-				} else if(previous != nullptr && following != nullptr){
-					previous->next = current->next;
-					delete current;
-					current = previous->next;
-					current->next = following->next;
-				} else if(previous != nullptr && following == nullptr){
-					current->next = nullptr;
-					previous->next = nullptr;
-					delete current;
-					current = nullptr;
-				}
-			} else {
-				previous = current;
-				current = current->next;
-				following = current->next;
-			}
-		} else if(df == DeleteFlag::GREATER){
-			if(current->value == d){
-				if (previous == nullptr && following != nullptr){
-					previous = current;
-					current = following;
-					following = current->next; //following->next
-					delete previous;
-					previous = nullptr;
-				} else if(previous != nullptr && following != nullptr){
-					previous->next = current->next;
-					delete current;
-					current = previous->next;
-					current->next = following->next;
-				} else if(previous != nullptr && following == nullptr){
-					current->next = nullptr;
-					previous->next = nullptr;
-					delete current;
-					current = nullptr;
-				}
-			} else {
-				previous = current;
-				current = current->next;
-				following = current->next;
-			}
-		} else {
-			std::cout << "Invalid flag!" << std::endl;
-			exit(-1);
+	if (empty()) {
+		return;
+	}
+	Node *temp = first;
+	Node *prev = nullptr;
+	if (df == List::DeleteFlag::EQUAL) {
+		if (temp != nullptr && temp->value == d) {
+			first = temp->next;
+			delete temp;
+			return;
 		}
+		while (temp != nullptr && temp->value != d) {
+			prev = temp;
+			temp = temp->next;
+		}
+
+		if (temp == nullptr) {
+			return;
+		}
+
+		prev->next = temp->next;
+		delete temp;
+	} else if (df == List::DeleteFlag::LESS) {
+		Node *temp = first, *prev;
+
+		while (temp != nullptr && temp->value < d) {
+			first = temp->next;
+			delete temp;
+			temp = first;
+		}
+
+		while (temp != nullptr) {
+			while (temp != nullptr && temp->value >= d) {
+				prev = temp;
+				temp = temp->next;
+			}
+
+			if (temp == nullptr) {
+				return;
+			}
+
+			prev->next = temp->next;
+			delete temp;
+
+			temp = prev->next;
+		}
+	} else if (df == List::DeleteFlag::GREATER) {
+		Node *temp = first, *prev;
+
+		while (temp != nullptr && temp->value > d) {
+			first = temp->next;
+			delete temp;
+			temp = first;
+		}
+
+		while (temp != nullptr) {
+			while (temp != nullptr && temp->value <= d) {
+				prev = temp;
+				temp = temp->next;
+			}
+
+			if (temp == nullptr) {
+				return;
+			}
+
+			prev->next = temp->next;
+			delete temp;
+
+			temp = prev->next;
+		}
+	} else {
+		throw std::runtime_error("Invalid flag");
 	}
 }
 void List::print() const {
-	Node* tempNode = first;
-	while(tempNode){
+	Node *tempNode = first;
+	while (tempNode) {
 		std::cout << tempNode->value << " ";
 		tempNode = tempNode->next;
 	}
