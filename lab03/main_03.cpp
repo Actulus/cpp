@@ -33,7 +33,7 @@ int main() {
 
 
 	//----------------STACK---------------
-	std::cout << "\n----STACK----\n";
+	std::cout << "\n----STACK: Read from rigth to left----\n";
 	Stack *stack = new Stack();
 	stack->push(5);
 	stack->push(2);
@@ -54,7 +54,6 @@ int main() {
 	} catch (std::invalid_argument &error) {
 		std::cout << error.what();
 	}
-
 
 	return 0;
 }
