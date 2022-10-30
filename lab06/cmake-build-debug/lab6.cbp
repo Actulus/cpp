@@ -82,6 +82,30 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="E:/Egyetem/3.felev/cpp/lab06/Matrix.cpp">
+			<Option target="lab6"/>
+		</Unit>
+		<Unit filename="E:/Egyetem/3.felev/cpp/lab06/Matrix.h">
+			<Option target="lab6"/>
+		</Unit>
+		<Unit filename="E:/Egyetem/3.felev/cpp/lab06/Point.cpp">
+			<Option target="lab6"/>
+		</Unit>
+		<Unit filename="E:/Egyetem/3.felev/cpp/lab06/Point.h">
+			<Option target="lab6"/>
+		</Unit>
+		<Unit filename="E:/Egyetem/3.felev/cpp/lab06/Polynomial.cpp">
+			<Option target="lab6"/>
+		</Unit>
+		<Unit filename="E:/Egyetem/3.felev/cpp/lab06/Polynomial.h">
+			<Option target="lab6"/>
+		</Unit>
+		<Unit filename="E:/Egyetem/3.felev/cpp/lab06/functions.cpp">
+			<Option target="lab6"/>
+		</Unit>
+		<Unit filename="E:/Egyetem/3.felev/cpp/lab06/functions.h">
+			<Option target="lab6"/>
+		</Unit>
 		<Unit filename="E:/Egyetem/3.felev/cpp/lab06/main_06.cpp">
 			<Option target="lab6"/>
 		</Unit>

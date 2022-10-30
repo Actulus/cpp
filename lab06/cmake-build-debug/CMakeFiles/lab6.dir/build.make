@@ -78,19 +78,79 @@ CMakeFiles/lab6.dir/main_06.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/lab6.dir/main_06.cpp.s"
 	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S E:\Egyetem\3.felev\cpp\lab06\main_06.cpp -o CMakeFiles\lab6.dir\main_06.cpp.s
 
+CMakeFiles/lab6.dir/Point.cpp.obj: CMakeFiles/lab6.dir/flags.make
+CMakeFiles/lab6.dir/Point.cpp.obj: ../Point.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=E:\Egyetem\3.felev\cpp\lab06\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/lab6.dir/Point.cpp.obj"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\lab6.dir\Point.cpp.obj -c E:\Egyetem\3.felev\cpp\lab06\Point.cpp
+
+CMakeFiles/lab6.dir/Point.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/lab6.dir/Point.cpp.i"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E E:\Egyetem\3.felev\cpp\lab06\Point.cpp > CMakeFiles\lab6.dir\Point.cpp.i
+
+CMakeFiles/lab6.dir/Point.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/lab6.dir/Point.cpp.s"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S E:\Egyetem\3.felev\cpp\lab06\Point.cpp -o CMakeFiles\lab6.dir\Point.cpp.s
+
+CMakeFiles/lab6.dir/Matrix.cpp.obj: CMakeFiles/lab6.dir/flags.make
+CMakeFiles/lab6.dir/Matrix.cpp.obj: ../Matrix.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=E:\Egyetem\3.felev\cpp\lab06\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/lab6.dir/Matrix.cpp.obj"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\lab6.dir\Matrix.cpp.obj -c E:\Egyetem\3.felev\cpp\lab06\Matrix.cpp
+
+CMakeFiles/lab6.dir/Matrix.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/lab6.dir/Matrix.cpp.i"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E E:\Egyetem\3.felev\cpp\lab06\Matrix.cpp > CMakeFiles\lab6.dir\Matrix.cpp.i
+
+CMakeFiles/lab6.dir/Matrix.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/lab6.dir/Matrix.cpp.s"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S E:\Egyetem\3.felev\cpp\lab06\Matrix.cpp -o CMakeFiles\lab6.dir\Matrix.cpp.s
+
+CMakeFiles/lab6.dir/functions.cpp.obj: CMakeFiles/lab6.dir/flags.make
+CMakeFiles/lab6.dir/functions.cpp.obj: ../functions.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=E:\Egyetem\3.felev\cpp\lab06\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/lab6.dir/functions.cpp.obj"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\lab6.dir\functions.cpp.obj -c E:\Egyetem\3.felev\cpp\lab06\functions.cpp
+
+CMakeFiles/lab6.dir/functions.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/lab6.dir/functions.cpp.i"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E E:\Egyetem\3.felev\cpp\lab06\functions.cpp > CMakeFiles\lab6.dir\functions.cpp.i
+
+CMakeFiles/lab6.dir/functions.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/lab6.dir/functions.cpp.s"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S E:\Egyetem\3.felev\cpp\lab06\functions.cpp -o CMakeFiles\lab6.dir\functions.cpp.s
+
+CMakeFiles/lab6.dir/Polynomial.cpp.obj: CMakeFiles/lab6.dir/flags.make
+CMakeFiles/lab6.dir/Polynomial.cpp.obj: ../Polynomial.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=E:\Egyetem\3.felev\cpp\lab06\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/lab6.dir/Polynomial.cpp.obj"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\lab6.dir\Polynomial.cpp.obj -c E:\Egyetem\3.felev\cpp\lab06\Polynomial.cpp
+
+CMakeFiles/lab6.dir/Polynomial.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/lab6.dir/Polynomial.cpp.i"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E E:\Egyetem\3.felev\cpp\lab06\Polynomial.cpp > CMakeFiles\lab6.dir\Polynomial.cpp.i
+
+CMakeFiles/lab6.dir/Polynomial.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/lab6.dir/Polynomial.cpp.s"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S E:\Egyetem\3.felev\cpp\lab06\Polynomial.cpp -o CMakeFiles\lab6.dir\Polynomial.cpp.s
+
 # Object files for target lab6
 lab6_OBJECTS = \
-"CMakeFiles/lab6.dir/main_06.cpp.obj"
+"CMakeFiles/lab6.dir/main_06.cpp.obj" \
+"CMakeFiles/lab6.dir/Point.cpp.obj" \
+"CMakeFiles/lab6.dir/Matrix.cpp.obj" \
+"CMakeFiles/lab6.dir/functions.cpp.obj" \
+"CMakeFiles/lab6.dir/Polynomial.cpp.obj"
 
 # External object files for target lab6
 lab6_EXTERNAL_OBJECTS =
 
 lab6.exe: CMakeFiles/lab6.dir/main_06.cpp.obj
+lab6.exe: CMakeFiles/lab6.dir/Point.cpp.obj
+lab6.exe: CMakeFiles/lab6.dir/Matrix.cpp.obj
+lab6.exe: CMakeFiles/lab6.dir/functions.cpp.obj
+lab6.exe: CMakeFiles/lab6.dir/Polynomial.cpp.obj
 lab6.exe: CMakeFiles/lab6.dir/build.make
 lab6.exe: CMakeFiles/lab6.dir/linklibs.rsp
 lab6.exe: CMakeFiles/lab6.dir/objects1.rsp
 lab6.exe: CMakeFiles/lab6.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=E:\Egyetem\3.felev\cpp\lab06\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable lab6.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=E:\Egyetem\3.felev\cpp\lab06\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable lab6.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\lab6.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

@@ -8,6 +8,10 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
+  "E:/Egyetem/3.felev/cpp/lab06/Matrix.cpp" "E:/Egyetem/3.felev/cpp/lab06/cmake-build-debug/CMakeFiles/lab6.dir/Matrix.cpp.obj"
+  "E:/Egyetem/3.felev/cpp/lab06/Point.cpp" "E:/Egyetem/3.felev/cpp/lab06/cmake-build-debug/CMakeFiles/lab6.dir/Point.cpp.obj"
+  "E:/Egyetem/3.felev/cpp/lab06/Polynomial.cpp" "E:/Egyetem/3.felev/cpp/lab06/cmake-build-debug/CMakeFiles/lab6.dir/Polynomial.cpp.obj"
+  "E:/Egyetem/3.felev/cpp/lab06/functions.cpp" "E:/Egyetem/3.felev/cpp/lab06/cmake-build-debug/CMakeFiles/lab6.dir/functions.cpp.obj"
   "E:/Egyetem/3.felev/cpp/lab06/main_06.cpp" "E:/Egyetem/3.felev/cpp/lab06/cmake-build-debug/CMakeFiles/lab6.dir/main_06.cpp.obj"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")

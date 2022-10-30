@@ -1,6 +1,8 @@
-#include <iostream>
+#include "functions.h"
 
 int main() {
-    std::cout << "Hello, Lab_06" << std::endl;
-    return 0;
+	//fel1_point();
+	//fel2_matrix();
+	fel3_polinom();
+	return 0;
 }

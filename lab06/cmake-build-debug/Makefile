@@ -128,6 +128,102 @@ lab6/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\lab6.dir\build.make CMakeFiles/lab6.dir/build
 .PHONY : lab6/fast
 
+Matrix.obj: Matrix.cpp.obj
+.PHONY : Matrix.obj
+
+# target to build an object file
+Matrix.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\lab6.dir\build.make CMakeFiles/lab6.dir/Matrix.cpp.obj
+.PHONY : Matrix.cpp.obj
+
+Matrix.i: Matrix.cpp.i
+.PHONY : Matrix.i
+
+# target to preprocess a source file
+Matrix.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\lab6.dir\build.make CMakeFiles/lab6.dir/Matrix.cpp.i
+.PHONY : Matrix.cpp.i
+
+Matrix.s: Matrix.cpp.s
+.PHONY : Matrix.s
+
+# target to generate assembly for a file
+Matrix.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\lab6.dir\build.make CMakeFiles/lab6.dir/Matrix.cpp.s
+.PHONY : Matrix.cpp.s
+
+Point.obj: Point.cpp.obj
+.PHONY : Point.obj
+
+# target to build an object file
+Point.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\lab6.dir\build.make CMakeFiles/lab6.dir/Point.cpp.obj
+.PHONY : Point.cpp.obj
+
+Point.i: Point.cpp.i
+.PHONY : Point.i
+
+# target to preprocess a source file
+Point.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\lab6.dir\build.make CMakeFiles/lab6.dir/Point.cpp.i
+.PHONY : Point.cpp.i
+
+Point.s: Point.cpp.s
+.PHONY : Point.s
+
+# target to generate assembly for a file
+Point.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\lab6.dir\build.make CMakeFiles/lab6.dir/Point.cpp.s
+.PHONY : Point.cpp.s
+
+Polynomial.obj: Polynomial.cpp.obj
+.PHONY : Polynomial.obj
+
+# target to build an object file
+Polynomial.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\lab6.dir\build.make CMakeFiles/lab6.dir/Polynomial.cpp.obj
+.PHONY : Polynomial.cpp.obj
+
+Polynomial.i: Polynomial.cpp.i
+.PHONY : Polynomial.i
+
+# target to preprocess a source file
+Polynomial.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\lab6.dir\build.make CMakeFiles/lab6.dir/Polynomial.cpp.i
+.PHONY : Polynomial.cpp.i
+
+Polynomial.s: Polynomial.cpp.s
+.PHONY : Polynomial.s
+
+# target to generate assembly for a file
+Polynomial.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\lab6.dir\build.make CMakeFiles/lab6.dir/Polynomial.cpp.s
+.PHONY : Polynomial.cpp.s
+
+functions.obj: functions.cpp.obj
+.PHONY : functions.obj
+
+# target to build an object file
+functions.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\lab6.dir\build.make CMakeFiles/lab6.dir/functions.cpp.obj
+.PHONY : functions.cpp.obj
+
+functions.i: functions.cpp.i
+.PHONY : functions.i
+
+# target to preprocess a source file
+functions.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\lab6.dir\build.make CMakeFiles/lab6.dir/functions.cpp.i
+.PHONY : functions.cpp.i
+
+functions.s: functions.cpp.s
+.PHONY : functions.s
+
+# target to generate assembly for a file
+functions.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\lab6.dir\build.make CMakeFiles/lab6.dir/functions.cpp.s
+.PHONY : functions.cpp.s
+
 main_06.obj: main_06.cpp.obj
 .PHONY : main_06.obj
 
@@ -161,6 +257,18 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... lab6
+	@echo ... Matrix.obj
+	@echo ... Matrix.i
+	@echo ... Matrix.s
+	@echo ... Point.obj
+	@echo ... Point.i
+	@echo ... Point.s
+	@echo ... Polynomial.obj
+	@echo ... Polynomial.i
+	@echo ... Polynomial.s
+	@echo ... functions.obj
+	@echo ... functions.i
+	@echo ... functions.s
 	@echo ... main_06.obj
 	@echo ... main_06.i
 	@echo ... main_06.s

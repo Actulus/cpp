@@ -1,4 +1,8 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/lab6.dir/Matrix.cpp.obj"
+  "CMakeFiles/lab6.dir/Point.cpp.obj"
+  "CMakeFiles/lab6.dir/Polynomial.cpp.obj"
+  "CMakeFiles/lab6.dir/functions.cpp.obj"
   "CMakeFiles/lab6.dir/main_06.cpp.obj"
   "lab6.exe"
   "lab6.exe.manifest"

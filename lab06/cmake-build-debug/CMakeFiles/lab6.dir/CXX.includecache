@@ -1,0 +1,16 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+E:/Egyetem/3.felev/cpp/lab06/Polynomial.cpp
+Polynomial.h
+E:/Egyetem/3.felev/cpp/lab06/Polynomial.h
+
+E:/Egyetem/3.felev/cpp/lab06/Polynomial.h
+iostream
+-
+

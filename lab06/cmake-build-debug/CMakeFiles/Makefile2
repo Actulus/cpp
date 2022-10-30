@@ -80,12 +80,12 @@ clean: CMakeFiles/lab6.dir/clean
 CMakeFiles/lab6.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\lab6.dir\build.make CMakeFiles/lab6.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\lab6.dir\build.make CMakeFiles/lab6.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=E:\Egyetem\3.felev\cpp\lab06\cmake-build-debug\CMakeFiles --progress-num=1,2 "Built target lab6"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=E:\Egyetem\3.felev\cpp\lab06\cmake-build-debug\CMakeFiles --progress-num=1,2,3,4,5,6 "Built target lab6"
 .PHONY : CMakeFiles/lab6.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/lab6.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start E:\Egyetem\3.felev\cpp\lab06\cmake-build-debug\CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start E:\Egyetem\3.felev\cpp\lab06\cmake-build-debug\CMakeFiles 6
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/lab6.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start E:\Egyetem\3.felev\cpp\lab06\cmake-build-debug\CMakeFiles 0
 .PHONY : CMakeFiles/lab6.dir/rule
