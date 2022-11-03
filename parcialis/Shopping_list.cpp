@@ -2,6 +2,7 @@
 // Created by Pati on 11/3/2022.
 //
 
+#include <cstring>
 #include "Shopping_list.h"
 
 Shopping_list::Shopping_list(int capacity) {
@@ -18,18 +19,20 @@ Shopping_list::Shopping_list(const Shopping_list &what) {
 	this->count = what.count;
 	for (int i = 0; i < this->count; ++i) {
 		this->list[i] = what.list[i];
-//		count++;
 	}
 }
 Shopping_list::Shopping_list(Shopping_list &&what) noexcept {
 	delete[]this->list;
+//	this->list->setQuantity(0);
 	this->capacity = 0;
 	this->count = 0;
 
 	this->capacity = what.capacity;
+//	this->list->setQuantity(what.list->getQuantity());
 	this->count = what.count;
 	this->list = what.list;
 
+	delete[]what.list;
 	what.list = nullptr;
 	what.capacity = 0;
 	what.count = 0;
@@ -37,8 +40,9 @@ Shopping_list::Shopping_list(Shopping_list &&what) noexcept {
 Shopping_list::~Shopping_list() {
 	if (this->list != nullptr) {
 		this->capacity = 0;
+//		this->list->setQuantity(0);
 		this->count = 0;
-		delete[]this->list;
+//		delete[]this->list;
 		this->list = nullptr;
 	}
 }
@@ -65,11 +69,11 @@ void Shopping_list::addNewItem(Item item) {
 			}
 		}
 	} else {
+		//cout << getCount();
 //		cout << count;
-		list[count] = item;
-//		list[count] = Item(item.getName(), item.getQuantity(), item.getCategory());
+//		list[count] = item;
+		list[count] = Item(item.getName(), item.getQuantity(), item.getCategory());
 		count++;
-
 	}
 }
 
@@ -86,20 +90,25 @@ void Shopping_list::sortByCategory() {
 	}
 }
 void Shopping_list::printCategoryItems(Item::Category category) {
-	for (int i = 0; i < capacity; ++i) {
+	for (int i = 0; i < count; ++i) {
 		if (list[i].getCategory() == category) {
 			cout << list[i] << "\n";
 		}
 	}
 }
 void Shopping_list::increaseCapacityBy(int value) {
+	int oldcap = this->capacity;
 	this->capacity = this->capacity + value;
+	Item *newList = new Item[this->capacity];
+	memcpy(newList, this->list, oldcap * sizeof(Item));
+	delete[] this->list;
+	this->list = newList;
 }
 Item Shopping_list::operator[](int index) {
 	return list[index];
 }
 const Item Shopping_list::operator[](int index) const {
-	return list[index];
+	return this->list[index];
 }
 Shopping_list &Shopping_list::operator=(const Shopping_list &what) {
 /*
@@ -108,6 +117,7 @@ Shopping_list &Shopping_list::operator=(const Shopping_list &what) {
 */
 
 	this->capacity = what.capacity;
+//	this->list->setQuantity(what.list->getQuantity());
 	this->count = what.count;
 	this->list = new Item[this->capacity];
 	for (int i = 0; i < this->count; ++i) {
@@ -120,41 +130,45 @@ Shopping_list &Shopping_list::operator=(Shopping_list &&what) {
 	this->list = nullptr;
 
 	this->capacity = what.capacity;
+//	this->list->setQuantity(what.list->getQuantity());
 	this->count = what.count;
 	this->list = what.list;
 
+	delete[]what.list;
 	what.list = nullptr;
 
 	return *this;
 }
 Shopping_list operator+(const Shopping_list &list1, const Shopping_list &list2) {
-	auto *temp = new Shopping_list();
+	Shopping_list temp(list1.capacity + list2.capacity);
+/*
 	temp->capacity = list1.capacity + list2.capacity;
 	temp->list = new Item[temp->capacity];
 	temp->count = 0;
+*/
 
 	for (int i = 0; i < list1.count; ++i) {
-		temp->list[temp->count] = list1.list[i];
-		temp->count++;
+		temp.addNewItem(list1.list[i]);
+		temp.count++;
 	}
 
-	for (int i = 0; i < temp->count; ++i) {
+
+	for (int i = 0; i < temp.capacity; ++i) {
 		for (int k = 0; k < list2.count; ++k) {
-			if (temp->list[i].getName() == list2.list[k].getName()) {
-				int nr = temp->list[i].getQuantity() + list2.list[k].getQuantity();
-				temp->list[i].setQuantity(nr);
+			if (temp.list[i].getName() == list2.list[k].getName()) {
+				int nr = temp.list[i].getQuantity() + list2.list[k].getQuantity();
+				temp.list[i].setQuantity(nr);
 			} else {
-				temp->list[temp->count] = list2.list[k];
-				temp->count++;
+//				temp->list[temp->count] = list2.list[k];
+				temp.count++;
 			}
 		}
 	}
-
-	return *temp;
+	return temp;
 }
 ostream &operator<<(ostream &os, const Shopping_list &list) {
-	for (int i = 0; i < list.capacity; ++i) {
-		os << list[i];
+	for (int i = 0; i < list.count; ++i) {
+		os << list[i] << endl;
 	}
 	os << endl;
 	return os;
