@@ -1,6 +1,6 @@
-#include <iostream>
+#include "functions.h"
 
 int main() {
-    std::cout << "Hello, Lab_08" << std::endl;
-    return 0;
+	exercises();
+	return 0;
 }

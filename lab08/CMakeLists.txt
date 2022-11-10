@@ -1,2 +1,2 @@
 project(lab8)
-add_executable(lab8 main_08.cpp)
+add_executable(lab8 main_08.cpp functions.cpp functions.h)

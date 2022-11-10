@@ -111,3 +111,10 @@
 /cmake-build-debug/build.ninja
 /cmake-build-debug/cmake_install.cmake
 /cmake-build-debug/CMakeCache.txt
+/cmake-build-debug/
+/lab01/cmake-build-debug/
+/lab02/cmake-build-debug/
+/lab03/cmake-build-debug/
+/lab05/cmake-build-debug/
+/lab06/cmake-build-debug/
+/lab08/cmake-build-debug/
