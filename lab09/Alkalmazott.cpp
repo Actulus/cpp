@@ -4,14 +4,26 @@
 
 #include "Alkalmazott.h"
 
-Alkalmazott::Alkalmazott(string vezetekNev, string kresztNev, int szuletesiEv,
-                         string munkakor) : Szemely(vezetekNev, kresztNev, szuletesiEv) {
-	this->vezetekNev = vezetekNev;
+int Alkalmazott::counter{0};
+
+Alkalmazott::Alkalmazott(const string &vezetekNev, const string &kresztNev, int szuletesiEv,
+                         const string &munkakor) : Szemely(vezetekNev, kresztNev, szuletesiEv), munkakor(munkakor) {
+	/*this->vezetekNev = vezetekNev;
 	this->keresztNev = keresztNev;
 	this->szuletesiEv = szuletesiEv;
-	this->munkakor = munkakor;
+	this->munkakor = munkakor;*/
+	this->id = counter;
+	++counter;
 }
 void Alkalmazott::print(ostream &os) {
+	os << "ID: " << this->getID() << " ";
 	Szemely::print(os);
-	os << munkakor;
+	os << " munkakore: " << this->getMunkakor();
+	os << endl;
+}
+int Alkalmazott::getID() {
+	return this->id;
+}
+string Alkalmazott::getMunkakor() {
+	return this->munkakor;
 }

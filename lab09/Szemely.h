@@ -9,6 +9,9 @@
 #include <cstdio>
 #include <cstdlib>
 #include <string>
+#include <vector>
+#include <algorithm>
+#include <ctime>
 
 using namespace std;
 
@@ -19,7 +22,10 @@ protected:
 	int szuletesiEv;
 public:
 	Szemely(string vezetekNev, string kresztNev, int szuletesiEv);
-	virtual void print(ostream &os);
+	virtual void print(ostream &os) /*override - ha elmarad a virtual, akkor jelzi, ososztalynal is szol masmirol, nem kotelezo odairni*/;
+	string getVezetekNev();
+	string getKeresztNev();
+	int getSzuletesiEv();
 };
 
 

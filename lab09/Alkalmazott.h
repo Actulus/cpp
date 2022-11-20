@@ -7,13 +7,19 @@
 
 #include "Szemely.h"
 
+//publikus szarmaztatas a legnagyobb, mindent orokol, a private mindent privatete tesz, a protected pedig protectedde
+//a privatetokat nem eri el a szarmaztatott osztaly, a protectedeket igen
 class Alkalmazott: public Szemely{
 protected:
 	string munkakor;
+	int id;
+	static int counter;
 public:
-	Alkalmazott(string vezetekNev, string kresztNev, int szuletesiEv,
-	            string munkakor);
-	void print(ostream &os) override;
+	Alkalmazott(const string &vezetekNev, const string &kresztNev, int szuletesiEv,
+	            const string &munkakor);
+	virtual void print(ostream &os);
+	int getID();
+	string getMunkakor();
 };
 
 

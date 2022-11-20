@@ -8,13 +8,15 @@
 #include "Alkalmazott.h"
 
 class Manager: public Alkalmazott{
-	Alkalmazott *beosztottak;
+	vector<Alkalmazott*> beosztottak;
 public:
-	Manager(string vezetekNev, string kresztNev, int szuletesiEv, string munkakor);
+	static const string MANAGER_MUNKAKOR;
+	Manager(const string &vezetekNev, const string &kresztNev, int szuletesiEv, const string &munkakor);
 	void addAlkalmazott(Alkalmazott*alkalmazott);
 	void deleteAlkalmazott(Alkalmazott*alkalmazott);
-	int beosztottakSzama();
-	void print(ostream&os) override;
+	int const beosztottakSzama(); //constos fg. csak mas standard szerint mukodott {query} = const
+	virtual void print(ostream&os) /*override*/; //a virtualt nem muszaj odairni de boviteshez jo
+	vector<Alkalmazott*> getBeosztottak();
 };
 
 

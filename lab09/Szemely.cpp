@@ -10,5 +10,14 @@ Szemely::Szemely(string vezetekNev, string kresztNev, int szuletesiEv) {
 	this->szuletesiEv = szuletesiEv;
 }
 void Szemely::print(ostream &os) {
-	os << endl << vezetekNev << " " << keresztNev << " szuletesi eve: " << szuletesiEv;
+	os << this->getVezetekNev() << " " << this->getKeresztNev() << "szuletesi eve: " << this->getSzuletesiEv();
+}
+string Szemely::getVezetekNev() {
+	return this->vezetekNev;
+}
+string Szemely::getKeresztNev() {
+	return this->keresztNev;
+}
+int Szemely::getSzuletesiEv() {
+	return this->szuletesiEv;
 }
