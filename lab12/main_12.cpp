@@ -1,13 +1,14 @@
 #include <iostream>
 #include "GraduationDao.h"
 #include "GraduationDaoImpl.h"
+#include "GraduationServiceImpl.h"
 
 string subjects[]{"maths", "romanian", "hungarian"};
 int numSubjects = sizeof(subjects) / sizeof(subjects[0]);
 
 int main() {
-	// ADMIN
-	GraduationDao *dao = new GraduationDaoImpl();
+	// region ADMIN
+	/*GraduationDao *dao = new GraduationDaoImpl();
 	dao->enrollStudents("names.txt");
 	cout << "Number of enrolled students: " << dao->numEnrolled() << endl;
 
@@ -43,6 +44,27 @@ int main() {
 		}
 	}
 
+	delete dao;*/
+	//endregion
+
+	//region TEST
+	GraduationDao *dao = new GraduationDaoImpl();
+	dao->enrollStudents("names.txt");
+	for (int i = 0; i < numSubjects; ++i) {
+		dao->saveGradesForSubject(subjects[i], subjects[i] + ".txt");
+	}
+	dao->computeAverage();
+	GraduationService *service = new GraduationServiceImpl(dao);
+	// tesztelés
+	int id = 7;
+	string subject = subjects[0];
+	cout << "Student's data with id =  " << id << endl;
+	cout << service->findById(7) << endl;
+	cout << "Student's id = " << id << " their grade in " << subject << " is ";
+	cout << service->getResultByIdAndSubject(id, subject) << endl;
+
 	delete dao;
+	delete service;
+	//endregion
 	return 0;
 }
