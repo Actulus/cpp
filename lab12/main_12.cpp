@@ -2,16 +2,24 @@
 #include "GraduationDao.h"
 #include "GraduationDaoImpl.h"
 #include "GraduationServiceImpl.h"
+#include "SettlementStatisticsImpl.h"
 
 string subjects[]{"maths", "romanian", "hungarian"};
 int numSubjects = sizeof(subjects) / sizeof(subjects[0]);
 
 void admin();
 void test();
+void ex2();
 
 int main() {
-	admin();
-	test();
+	//region ex1
+	//admin();
+	//test();
+	//endregion
+
+	//region ex2
+	ex2();
+	//endregion
 	return 0;
 }
 
@@ -77,4 +85,30 @@ void test() {
 	delete dao;
 	delete service;
 	//endregion
+}
+
+void ex2() {
+	SettlementStatisticsImpl *set = new SettlementStatisticsImpl("telepulesek.csv");
+	cout << "Number of settlementsByCounty is " << set->numSettlements() << endl;
+	cout << "Number of counties is " << set->numCounties() << endl;
+	string county = "AR";
+	cout << "Number of settlementsByCounty in " << county << " is " << set->numSettlementsByCounty(county) << endl;
+	cout << "These settlementsByCounty are: " << endl;
+	vector<Settlement> settlementsByCounty = set->findSettlementsByCounty(county);
+	for (auto i: settlementsByCounty) {
+		cout << i;
+	}
+	cout << endl;
+	string name = "Nou";
+	vector<Settlement> settlementsByName = set->findSettlementsByName(name);
+	cout << "Settlements with the name " << name << " in their name are: " << endl;
+	for (auto i: settlementsByName) {
+		cout << i;
+	}
+	cout << endl;
+	cout << "Settlement with the county " << county << " and name " << name << " is "
+	     << set->findSettlementsByNameAndCounty(name, county) << endl;;
+	cout << "The settlement with the max population is " << set->maxPopulationDensity();
+	cout << "The settlement with the min population is " << set->minPopulationDensity();
+
 }
