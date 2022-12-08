@@ -6,9 +6,18 @@
 string subjects[]{"maths", "romanian", "hungarian"};
 int numSubjects = sizeof(subjects) / sizeof(subjects[0]);
 
+void admin();
+void test();
+
 int main() {
+	admin();
+	test();
+	return 0;
+}
+
+void admin() {
 	// region ADMIN
-	/*GraduationDao *dao = new GraduationDaoImpl();
+	GraduationDao *dao = new GraduationDaoImpl();
 	dao->enrollStudents("names.txt");
 	cout << "Number of enrolled students: " << dao->numEnrolled() << endl;
 
@@ -44,9 +53,11 @@ int main() {
 		}
 	}
 
-	delete dao;*/
+	delete dao;
 	//endregion
+}
 
+void test() {
 	//region TEST
 	GraduationDao *dao = new GraduationDaoImpl();
 	dao->enrollStudents("names.txt");
@@ -66,5 +77,4 @@ int main() {
 	delete dao;
 	delete service;
 	//endregion
-	return 0;
 }
