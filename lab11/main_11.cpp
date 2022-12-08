@@ -10,12 +10,14 @@ using namespace std;
 
 int main() {
 	ifstream fin;
+	ofstream fout;
+	fout.open("output.txt");
 	fin.open("input.txt");
 	if (fin.fail()) {
 		throw runtime_error("Cannot open file");
 	}
 
-	map<string, vector<int>> indexes;
+	map <string, vector<int>> indexes;
 	string line;
 	vector<int> temp;
 	int counter = 1;
@@ -46,23 +48,30 @@ int main() {
 
 
 	for (const auto &index: indexes) {
-		cout << index.first << " ";
+		//cout << index.first << " ";
+		fout << index.first << " ";
 		if (index.second.size() == 1) {
-			cout << index.second[0] << " ";
+			//cout << index.second[0] << " ";
+			fout << index.second[0] << " ";
 		} else {
 			for (auto i = 0; i < index.second.size(); ++i) {
 				if (index.second[i] == index.second[i + 1] - 1) {
-					cout << index.second[i] << "-";
+					//cout << index.second[i] << "-";
+					fout << index.second[i] << "-";
 				} else if (i == index.second.size() - 1) {
-					cout << index.second[i] << " ";
+					//cout << index.second[i] << " ";
+					fout << index.second[i] << " ";
 				} else {
-					cout << index.second[i] << ", ";
+					//cout << index.second[i] << ", ";
+					fout << index.second[i] << ", ";
 				}
 			}
 		}
-		cout << endl;
+		//cout << endl;
+		fout << endl;
 	}
 
 	fin.close();
+	fout.close();
 	return 0;
 }
