@@ -12,12 +12,12 @@ int main() {
 	ifstream fin;
 	ofstream fout;
 	fout.open("output.txt");
-	fin.open("input.txt");
+	fin.open("bible.txt");
 	if (fin.fail()) {
 		throw runtime_error("Cannot open file");
 	}
 
-	map <string, vector<int>> indexes;
+	map<string, vector<int>> indexes;
 	string line;
 	vector<int> temp;
 	int counter = 1;
@@ -50,7 +50,10 @@ int main() {
 	for (const auto &index: indexes) {
 		//cout << index.first << " ";
 		fout << index.first << " ";
-		if (index.second.size() == 1) {
+		if (index.second.empty()) {
+			//cout << "file does not contain";
+			fout << "file does not contain";
+		} else if (index.second.size() == 1) {
 			//cout << index.second[0] << " ";
 			fout << index.second[0] << " ";
 		} else {
