@@ -1,6 +1,11 @@
-#include <iostream>
+#include "myifstream.h"
 
 int main() {
-    std::cout << "Hello, Lab_13" << std::endl;
-    return 0;
+	myifstream f("be.txt");
+	//cout << f.filesize();
+	for (int i = 0; i < f.filesize(); ++i) {
+		cout << f[i];
+	}
+	cout << endl;
+	return 0;
 }
