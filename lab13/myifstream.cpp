@@ -17,6 +17,8 @@ myifstream::myifstream(const string &file) {
 	//cout << counter;
 	//cout << this->text << endl;
 	this->size = counter;
+
+	fin.close();
 }
 int myifstream::filesize() {
 	return this->size;
@@ -25,6 +27,6 @@ char &myifstream::operator[](int index) {
 	if (index > this->size) {
 		throw out_of_range("index is either bigger or smaller than the file's size");
 	}
-	
+
 	return this->text.at(index);
 }
