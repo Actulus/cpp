@@ -1,0 +1,27 @@
+# ninja log v5
+1	1049	6946215848687616	CMakeFiles/kollokvium.dir/EvesKiadas.cpp.obj	a14e120f9032ecf1
+1	554	6946206680692844	CMakeFiles/kollokvium.dir/main_k.cpp.obj	d02b65a115671d15
+1049	1244	6946215850612465	kollokvium.exe	11b4378ad823964b
+2	1052	6946216365448768	CMakeFiles/kollokvium.dir/EvesKiadas.cpp.obj	a14e120f9032ecf1
+1052	1247	6946216367363196	kollokvium.exe	11b4378ad823964b
+1	1298	6946218569434491	CMakeFiles/kollokvium.dir/EvesKiadas.cpp.obj	a14e120f9032ecf1
+1298	1506	6946218571479459	kollokvium.exe	11b4378ad823964b
+1	1059	6946219327602838	CMakeFiles/kollokvium.dir/EvesKiadas.cpp.obj	a14e120f9032ecf1
+1059	1256	6946219329537213	kollokvium.exe	11b4378ad823964b
+1	1058	6946219498906150	CMakeFiles/kollokvium.dir/EvesKiadas.cpp.obj	a14e120f9032ecf1
+1059	1255	6946219500851412	kollokvium.exe	11b4378ad823964b
+1	1061	6946219604869918	CMakeFiles/kollokvium.dir/EvesKiadas.cpp.obj	a14e120f9032ecf1
+1062	1258	6946219606805264	kollokvium.exe	11b4378ad823964b
+2	555	6946220983323375	CMakeFiles/kollokvium.dir/main_k.cpp.obj	d02b65a115671d15
+5	1084	6946220988599648	CMakeFiles/kollokvium.dir/EvesKiadas.cpp.obj	a14e120f9032ecf1
+1084	1292	6946220990633804	kollokvium.exe	11b4378ad823964b
+2	1223	6946221463960264	CMakeFiles/kollokvium.dir/EvesKiadas.cpp.obj	a14e120f9032ecf1
+1224	1426	6946221465954920	kollokvium.exe	11b4378ad823964b
+2	1058	6946221648265136	CMakeFiles/kollokvium.dir/EvesKiadas.cpp.obj	a14e120f9032ecf1
+1058	1253	6946221650189977	kollokvium.exe	11b4378ad823964b
+2	1078	6946222019086858	CMakeFiles/kollokvium.dir/EvesKiadas.cpp.obj	a14e120f9032ecf1
+1078	1273	6946222021012837	kollokvium.exe	11b4378ad823964b
+2	1051	6946222310499770	CMakeFiles/kollokvium.dir/EvesKiadas.cpp.obj	a14e120f9032ecf1
+1052	1249	6946222312434174	kollokvium.exe	11b4378ad823964b
+2	1056	6946225007284743	CMakeFiles/kollokvium.dir/EvesKiadas.cpp.obj	a14e120f9032ecf1
+1056	1254	6946225009229555	kollokvium.exe	11b4378ad823964b
