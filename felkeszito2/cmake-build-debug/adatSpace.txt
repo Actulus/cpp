@@ -1,0 +1,8 @@
+januar lakber 1500
+januar elelmiszer 800
+januar szamlak 600
+januar kozlekedes 120
+februar	lakber	1500
+februar	elelmiszer	670
+februar	szamlak	550
+februar	kozlekedes	60
