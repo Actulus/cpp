@@ -1,0 +1,82 @@
+9-7805-9600-4675;Danny Goodman;JavaScript & DHTML Cookbook;2003;576
+9-7807-6453-3426;Danny Goodman;JavaScript Bible, 4th Edition;2001;1200
+9-7807-6455-7439;Danny Goodman: Michael Morrison;JavaScript Bible, Fifth Edition;2004;1272
+9-7818-6100-4598;Cliff Wootton;Javascript Programmer's Reference (Programmer To Programmer);2001;973
+9-7805-9600-3173;Hans Bergsten;JavaServer Pages, Second Edition;2002;684
+9-7802-0172-8286;Khalid Mughal: Rolf Rasmussen;A Programmer's Guide to Java(TM) Certification: A Comprehensive Primer (2nd Edition);2003;6729-7805-9600-7614;D. Ryan Stephens: Christopher Diggins: Jonathan Turkanis: Jeff Cogswell;C++ Cookbook (Cookbooks (O'reilly));2005;592
+9-7800-7225-3702;Jeff Kent;C++ Demystified;2004;368
+9-7806-7231-9044;Rene Alexander: Graham Bensley;C++ Footprint And Performance Optimization (Sams Professional);2000;400
+9-7807-6456-8527;Stephen Randy Davis;C++ for Dummies;2004;432;http://media.wiley.com/product_data/excerpt/7X/11188237/111882377X-6.pdf
+9-7801-3185-7575;Harvey & Paul) Deitel & Associates;C++ How To Program (5th Edition) (How To Program);2005;1536
+9-7805-9600-2985;Ray Lischner;C++ in a Nutshell;2003;704
+9-7802-0173-4843;David Vandevoorde: Nicolai M. Josuttis;C++ Templates: The Complete Guide;2002;552
+9-7802-0137-9273;Michi Henning: Steve Vinoski;Advanced Corba(R) Programming With C++ (Addison-Wesley Professional Computing Series);1999;1120
+9-7803-2110-8944;Philip Romanik: Amy Muntz;Applied C++: Practical Techniques For Building Better Software (C++ In-Depth Series);2003;352
+9-7807-3571-4342;David Conger: Ron Little;Creating Games in C++: A Step-by-Step Guide;2007;464
+9-7818-8641-1951;Steve Oualline;How Not to Program in C++: 111 Broken Programs and 3 Working Ones, or Why Does 2+2=5986;2003;280
+9-7807-6457-1978;Ivor Horton;Ivor Horton's Beginning Visual C++ 2005 (Programmer To Programmer);2006;1224
+9-7815-5622-3471;Bill Blunden;Memory Management: Algorithms And Implementations In C/C++ (Windows Programming/Development);2002;360
+9-7802-0170-4310;Andrei Alexandrescu;Modern C++ Design: Generic Programming And Design Patterns Applied (C++ In-Depth Series);2001;352
+9-7805-9600-4194;Steve Oualline;Practical C++ Programming, Second Edition;2003;600
+9-7804-7126-8529;Avinash Kak;Programming with Objects: A Comparative Presentation of Object Oriented Programming with C++ and Java;2003;1144
+9-7805-9600-3944;John Viega: Matt Messier;Secure Programming Cookbook for C and C++: Recipes for Cryptography, Authentication, Input Validation & More;2003;790
+9-7800-7225-5126;Herbert Schildt;The Art of C++;2004;424
+9-7802-0137-9266;Nicolai M. Josuttis;The C++ Standard Library: A Tutorial and Reference;1999;832
+9-7800-7213-2816;John Mueller;Visual C++(R).Net Developer's Guide;2002;880
+9-7815-5622-9053;Ralph Barbagallo;Wireless Game Development In C/C++ With Brew (Wordware Game Developer's Library);2003;321
+9-7815-5622-9633;Andrew Mulholland;Java 1.4 Game Programming (Wordware Game And Graphics Library);2003;647
+9-7807-8972-8616;William Brogden: Marcus Green: Ed Tittel;Java 2 Programmer Exam Cram 2 (Exam Cram Cx-310-035) (Exam Cram 2);2003;416
+9-7805-9600-1759;Robert Englander;Java and SOAP;2002;276
+9-7805-9600-2763;David Jordan: Craig Russell;Java Data Objects;2003;380
+9-7807-6454-9243;John O'Donahue;Java Database Programming Bible;2002;700
+9-7819-3011-0588;Erik Hatcher: Steve Loughran;Java Development with Ant;2002;672
+9-7805-9600-3876;Eric M. Burke: Brian M. Coyner;Java Extreme Programming Cookbook;2003;352
+9-7801-3046-1803;Eben Hewitt;Java for ColdFusion Developers;2003;600
+9-7807-8214-3737;Todd Greanier;Java foundations;2004;347
+9-7804-7146-3627;Joseph Walnes: Ara Abrahamian: Mike Cannon-Brookes: Patrick A. Lightbody;Java Open Source Programming: with XDoclet, JUnit, WebWork, Hibernate;2003;480
+9-7805-9600-3777;Jack Shirazi;Java Performance Tuning (2nd Edition);2003;600
+9-7802-6269-2762;Peter Sestoft;Java Precisely;2002;128
+9-7815-5860-9006;James McGovern: Sameer Tyagi: Michael Stevens: Sunil Mathew;Java Web Services Architecture (The Morgan Kaufmann Series In Data Management Systems);2003;831
+9-7805-9600-3999;Kim Topley;Java Web Services in a Nutshell;2003;600
+9-7801-3147-4345;Ralph Morelli: Ralph Walde;Java, Java, Java, Object-Oriented Problem Solving (3rd Edition);2006;880
+9-7802-0171-9543;Daryl Wilding-McBride;Java(TM) Development on PDAs: Building Applications for Pocket PC and Palm Devices (Java (Addison-Wesley));2003;256
+9-7803-2134-9804;Ken Arnold: James Gosling: David Holmes;Java(Tm) Programming Language, The (4th Edition) (The Java Series);2005;928
+9-7805-9600-4675;Danny Goodman;JavaScript & DHTML Cookbook;2003;576
+9-7807-6453-3426;Danny Goodman;JavaScript Bible, 4th Edition;2001;1200
+9-7807-6455-7439;Danny Goodman: Michael Morrison;JavaScript Bible, Fifth Edition;2004;1272
+9-7818-6100-4598;Cliff Wootton;Javascript Programmer's Reference (Programmer To Programmer);2001;973
+9-7805-9600-3173;Hans Bergsten;JavaServer Pages, Second Edition;2002;684
+9-7802-0172-8286;Khalid Mughal: Rolf Rasmussen;A Programmer's Guide to Java(TM) Certification: A Comprehensive Primer (2nd Edition);2003;672
+9-7804-7178-5972;Steve, Ph.D. Holzner;Ajax For Dummies (For Dummies (Computer/Tech));2006;384
+9-7802-0136-1216;Robert Sedgewick;Algorithms in Java, Part 5: Graph Algorithms (3rd Edition) (Algorithms in Java);2003;528
+9-7802-0136-1209;Robert Sedgewick;Algorithms in Java, Parts 1-4 (3rd Edition) (Algorithms in Java);2002;768
+9-7807-6459-6742;Simon Harris: James Ross;Beginning Algorithms (Wrox Beginning Guides);2005;600
+9-7807-6458-8747;Barry Burd;Beginning Programming with Java For Dummies (For Dummies (Computer/Tech));2005;408
+9-7805-9610-0940;Bruce Tate;Beyond Java;2005;200
+9-7815-9273-0056;David Brackeen;Developing Games In Java (New Riders Games);2003;1008
+9-7801-3142-5422;Frank Budinsky: Dave Steinberg: Ed Merks: Ray Ellersick: Timothy J. Grose;Eclipse Modeling Framework (The Eclipse Series);2003;720
+9-7807-6454-3852;Rod Johnson;Expert One-on-One J2EE Design and Development (Programmer to Programmer);2002;768
+9-7815-9059-5824;Ryan Asleson: Nathaniel T. Schutta;Foundations Of Ajax (Foundation);2005;296
+9-7805-9610-1619;Rich Gibson: Schuyler Erle;Google Maps Hacks;2006;366
+9-7807-8214-1900;Phillip Heller: Philip Heller;Ground-Up Java;2003;576
+9-7805-9600-4279;William Crawford: Jonathan Kaplan;J2EE Design Patterns;2003;368
+9-7805-9610-0070;Norman Richards: Sam Griffith;Jboss: A Developer's Notebook (Developers Notebook);2005;172
+9-7805-9600-7300;Andrew Davison;Killer Game Programming in Java;2005;996
+9-7805-9600-8734;Pat Niemeyer: Jonathan Knudsen;Learning Java;2005;976
+9-7805-9600-4002;Will Iverson;Mac OS X for Java Geeks;2003;304
+9-7804-7146-2071;Bill Dudney: Jonathan Lehr: Bill Willis: LeRoy Mattingly;Mastering JavaServer Faces (Java);2004;480
+9-7804-7123-7518;Michael C. Daconta: Kevin T. Smith: Donald Avondolio: W. Clay Richardson;More Java Pitfalls: 50 New Time-Saving Solutions and Workarounds;2003;300
+9-7804-7126-9236;Mark Matthews: Jim Cole: Joseph D. Gradecki;Mysql And Java Developer's Guide;2003;432
+9-7804-7177-7786;Nicholas C. Zakas: Jeremy McPeak: Joe Fawcett;Professional Ajax (Programmer To Programmer);2006;432
+9-7807-6457-4832;Rod Johnson: Juergen Hoeller: Alef Arendsen: Thomas Risberg: Colin Sampaleanu;Professional Java Development with the Spring Framework;2005;672
+9-7804-7148-6961;Mauro Marinilli;Professional Java User Interfaces;2006;668
+9-7807-6457-9080;Nicholas C. Zakas;Professional Javascript For Web Developers (Wrox Professional Guides);2005;672
+9-7804-7146-9513;W. Clay Richardson: Donald Avondolio: Joe Vitale: Peter Len: Kevin B. Smith;Professional Portal Development with Open Source Tools: JavaTM Portlet API, Lucene, James, Slide;2004;456
+9-7819-2899-4558;Dario Laverde: Giulio Ferrari: Jurgen Stuber;Programming Lego Mindstorms With Java (With Cd-Rom);2002;464
+9-7804-7126-8529;Avinash Kak;Programming with Objects: A Comparative Presentation of Object Oriented Programming with C++ and Java;2003;1144
+9-7803-2113-6497;Jayson Falkner: Kevin W. Jones;Servlets And Javaserver Pages(Tm): The J2ee(Tm) Technology Web Tier (The Developmentor Series);2003;784
+9-7805-9600-9076;Joshua Marinacci: Chris Adamson;Swing Hacks: Tips And Tools For Killer Guis (Hacks);2005;542
+9-7803-2116-6098;Per Kroll: Philippe Kruchten;The Rational Unified Process Made Easy: A Practitioner's Guide to the RUP (The Addison-Wesley Object Technology Series);2003;464
+9-7819-3011-0120;Duane K. Fields: Mark A. Kolb: Shawn Bayern;Web Development with JavaServer Pages;2001;800
+9-7804-7085-0978;Neil Gray;Web Server Programming;2003;620
+9-7815-9059-0775;Jonathan Knudsen;Wireless Java: Developing With J2me, Second Edition (Books For Professionals By Professionals);2003;384
